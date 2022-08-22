@@ -6,6 +6,7 @@
 
 
 body{
+  background: rgb(7, 7, 7);
   font-family:Inter, sans-serif;
   height:100vh;
   border:1px solid black;
@@ -16,13 +17,13 @@ body{
 }
 
 #root{
-  width:60%;
+  width:50%;
   height:100%;
   display:flex;
   align-items:center;
   justify-content: center;
   flex-direction: column;
-  border:1px solid black;
+  /* border:1px solid black; */
 
 }
 
@@ -30,31 +31,240 @@ body{
   display:flex;
   align-items: center;
   justify-content:center;
-  border:1px solid blue;
+  /* border:1px solid blue; */
   width:100%;
   height:100%;
 }
 
 #theapp{
+  background:rgb(23, 23, 23);
+
   display:flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height:100%;
   width:100%;
 }
 
 .navbar{
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background:#ec4b4b;
   width:100%;
-  height:8%;
+  height:6%;
   text-align: center;
+  margin-bottom:3%;
 }
 
+
 .onecard{
+  
+  align-items:center;
+  /* border:1px solid white; */
+  display: flex;
   text-align:center;
-  width:100%;
+  width:80%;
   background:rgb(23, 23, 23);
-  height:calc(92%/3)
+  height:30%;
+  padding-block:12px;
+
+  
+  
+}
+
+.theimage{
+  border-radius: 5px;
+  width: 23%;
+  height:100%;
+  /* border:1px solid white; */
+  margin-right:5%;
+  
+}
+
+#cardimage{
+  border-radius: 5px;
+  align-self: center;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.text{
+  display:flex;
+  flex-direction: column;
+  /* border:1px solid white; */
+  width:72%;
+}
+
+#locationmap{
+  display:flex;
+  /* border:1px solid white; */
+  
+
+}
+#location{
+  /* border:1px solid white; */
+  letter-spacing: 3px;
+  font-size:1.1em;
+  font-weight: 300;
+  text-align: left;
+  width:fit-content;  
+  padding-right:10px;
+
+}
+#map{
+  align-self:flex-end;
+  font-size:0.9em;
+  color:rgb(208, 207, 207);
+  text-align: left;
+  /* border-bottom:1px solid rgb(208, 207, 207); */
+  
+
+}
+#locicon{
+  color:#ec4b4b;
+}
+
+#someplace{
+  font-size:2em;
+  color:rgb(241, 241, 241);
+  font-weight:700;
+  text-align: left;
+  margin-top:0.2em;
+}
+#dates{
+  font-size:0.9em;
+  font-weight:600;
+  text-align: left;
+  margin-top:1em;
+}
+
+#description{
+  text-align: left;
+  margin-top:0.5em;
+  font-weight: 400;
+  font-size:0.85em;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color:rgb(220, 220, 220);
+}
+
+a{
+  color:unset;
+}
+
+
+@media(max-width:1100px){
+  #root{
+    width:65%;
+  }
+
+}
+@media(max-width:900px){
+  #root{
+    width:80%;
+
+  }
+  .onecard{
+    width:85%;
+  }
+  #someplace{
+    font-size:1.7em;
+  }
+  #location{
+    font-size:1em;
+  }
+  #map{
+    font-size:0.85em;
+  }
+  #dates{
+    font-size:0.85em;
+  }
+  #description{
+    font-size:0.85em;
+  }
+
+}
+
+@media(max-width:600px){
+  #root{
+    width:90%;
+
+  }
+  .onecard{
+    width:87%;
+  }
+  #someplace{
+    font-size:1.6em;
+  }
+  #location{
+    font-size:0.87em;
+  }
+  #map{
+    font-size:0.77em;
+  }
+  #dates{
+    font-size:0.77em;
+  }
+  #description{
+    font-size:0.8em;
+  }
+
+}
+
+@media(max-width:500px){
+  #root{
+    width:100%;
+
+  }
+  .onecard{
+    width:90%;
+  }
+  #someplace{
+    font-size:1.55em;
+  }
+  #location{
+    font-size:0.92em;
+  }
+  #map{
+    font-size:0.8em;
+  }
+  #dates{
+    font-size:0.82em;
+  }
+  #description{
+    font-size:0.82em;
+  }
+
+}
+
+
+@media(max-width:400px){
+  #root{
+    width:100%;
+
+  }
+  .onecard{
+    width:95%;
+  }
+  #someplace{
+    font-size:1.5em;
+  }
+  #location{
+    font-size:0.9em;
+  }
+  #map{
+    font-size:0.75em;
+  }
+  #dates{
+    font-size:0.8em;
+  }
+  #description{
+    font-size:0.8em;
+  }
+
 }
